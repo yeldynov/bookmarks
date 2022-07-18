@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template</title>
-  <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
+  <title>Bookmars</title>
+  <link rel="icon" type="image/png"
+    href="https://lh3.googleusercontent.com/rQrZHYKijUqWkNMi6UxUqdRDr39kMRiORzfV6lF5waCzYv1wZcjnNoePi-mo9Vl-ipt-AMR93z2iBWy_chsPJWzQbv0cs6iUKgJ0w8FI1Xa5rcReg3e23-eiE7fybww6UXI0SAakb-QKC6cWjucKobCA5HGbvh5hNBva7uPQZaa6bMGi6DM9U4Bo0qArMbp_OHePAr8m2cuNUecptkSgkSzOmjZULLcm56aWwEzdO4B1PD4x5AHYPWp-XmbdkR7xcHeTaPKf48zvFgPOCp75Q2-cHAKKecynyS8i8EstN_jYkDCHqQJLC2ems1bzRQZle8ZU4V5mup_2DUZJ42_MzEEKKW--quv-MNPwYU8cRPo80YViKRiCNZrZiwu3pTF6ff_h4ZBfx4iOm4esr4OBYH7oY_aGyvLbMRXSmUW9LdU8YJeQ5sPd0AA_xqZTzhLXmuR_KLkpom0wzuPglLmHUU-V5CDss9bsBsvVWEH8DWE1bblvItVLKdl4zbBaR_xRRvR6_p7Z4LQb6c8Y6VGWDXwe7KyfxI3hdBwce_7Jh5tiZWnoc5BahM2FC4NV33l6tw2hCTttaxPDGk_fXkVRv7YV_mkXHzSwWYfOYSfVk4oTKliZpScZw_UQB4bYjqRmZDZURoKAVZ1NPFj0xJQboVftrZPaDZJKKztbVGUF7P5THM0ootdFKJ5Bw60CoHJpo0jz-bfaR5K8YlvUEYOZtfR2xxMfdBGiJ-HuV0z8UX57PIZ4EkcyS1MYiDNvGXj-d296Oyd5Zg70AJXYX4N6Pxrte-Mu1ZBoZT8=w954-h950-no?authuser=0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,7 +16,35 @@
 </head>
 
 <body>
-  <h1>Hello World!</h1>
+  <!-- Open Modal -->
+  <h1 id="show-modal">Add Bookmark</h1>
+  <!-- Bookmarks -->
+  <div class="container" id="bookmarks-container">
+  </div>
+  <!-- Modal -->
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <i class="fas fa-times close-icon" id="close-modal"></i>
+      <div class="modal-header">
+        <h3>Add Bookmark</h3>
+      </div>
+      <div class="modal-content">
+        <form id="bookmark-form">
+          <!-- Website Name -->
+          <div class="form-group">
+            <label for="website-name" class="form-label">Website Name</label>
+            <input type="text" class="form-input" id="website-name">
+          </div>
+          <!-- Website Url -->
+          <div class="form-group">
+            <label for="website-url" class="form-label">Website Url</label>
+            <input type="text" class="form-input" id="website-url">
+          </div>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- Script -->
   <script src="script.js"></script>
 </body>
